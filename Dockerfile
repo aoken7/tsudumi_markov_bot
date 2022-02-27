@@ -14,4 +14,4 @@ COPY . /app
 
 WORKDIR /app
 
-CMD ["python3","tmp.py"]
+CMD ["python3","tweet.py"]
