@@ -8,10 +8,8 @@ RUN apt-get install -y mecab libmecab-dev mecab-ipadic-utf8
 
 RUN pip install tweepy mecab-python3==0.996.5 markovify schedule
 
-
-
 COPY . /app
 
 WORKDIR /app
 
-CMD ["python3","tweet.py"]
+CMD ["/bin/bash","run.sh"]
